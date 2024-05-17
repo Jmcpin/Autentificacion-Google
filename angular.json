@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ng-auth-google:build:production"
+              "buildTarget": "ng-auth-google:build:production"
             },
             "development": {
-              "browserTarget": "ng-auth-google:build:development"
+              "buildTarget": "ng-auth-google:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng-auth-google:build"
+            "buildTarget": "ng-auth-google:build"
           }
         },
         "test": {
@@ -100,5 +100,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
